@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="jquery.min.js"></script>
+  <script src="popper.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <title>Hazai halak</title> 
+  <link rel="stylesheet" href="halak.css"> 
+  <script src="halak.js"></script>
+  </head>
+<body>
+
+<div class="container-fluid" id="kepek">
+  <div id="demo" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>      
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="kepek/fej1.jpg" alt="Ponty" title="Ponty">
+      </div>
+      <div class="carousel-item">
+        <img src="kepek/fej2.jpg" alt="Leánykoncér" title="Leánykoncér">
+      </div>
+      <div class="carousel-item">
+        <img src="kepek/fej3.jpg" alt="Naphal" title="Naphal">
+      </div>
+     </div>      
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+  <h1 class="d-none d-md-block">Hazai halak</h1>
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#halak">A halakról</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#bekes">Békés halfajok</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#ragadozo">Ragadozó halak</a>
+    </li> 
+    <li class="nav-item">
+      <a class="nav-link" href="#vedett">Védett halak</a>
+    </li>    
+  </ul>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-4">
+      <h2 class="display-5" id="halak">A halakról</h2>
+      <p>A halak a gerinchúrosok törzsének egy nem rendszertani csoportja, mára az elsődlegesen vízi gerinces állatok gyűjtőnevévé vált. A négylábúakon kívül a koponyások kládjába tartozó összes élőlény hal.</p>
+      <p>Napjainkra több mint 31 000 fajuk ismert és rendszerezett. Az <abbr title="Természetvédelmi Világszövetség">IUCN</abbr> Vörös Listája 1200 veszélyeztetett fajt sorol fel, de a vizsgálat kevesebb, mint 3000 halfajra terjedt ki, így a <a href="https://hu.wikipedia.org/wiki/Vesz%C3%A9lyeztetett_fajok" target="blank">veszélyeztetett</a> halfajok száma ennél jóval nagyobb. </p>
+	  
+	  
+    </div>
+	<div class="col-lg-4">
+      
+	  <img src="kepek/halak.jpg" target="Halak" alt="Halak"/>
+	  
+    </div>
+    <div class="col-lg-4">
+      <table class="table table-hover elsotable">
+        <thead>
+          <tr>
+            <th >Rendszertani besorolás</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr colspan="row">
+            <td>Ország</td>
+            <td>Állatok</td>
+          </tr>
+          <tr>
+            <td>Törzs</td>
+            <td>Gerinchúrosok</td>
+          </tr>
+          <tr>
+            <td>Csoport</td>
+            <td>Koponyások</td>
+          </tr>
+          <tr>
+            <td>Csoport</td>
+            <td>Halak</td>
+          </tr>
+          <tr colspan="row">
+            <td >Ez az élőlénycsoport a tudomány mai állása szerint nem rendszertani kategória</td>
+            
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <h2 class="display-5" id="bekes">Békés halfajok</h2>
+  <div class="row">    
+    <div class="col-lg-3">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Méretkorlátozás alá eső békés halfajok</th>
+          </tr>
+        </thead>
+        <tbody class="kozep keplink">
+          <tr>
+            <td onclick="bekes('compo');" >Compó</td>
+          </tr>
+          <tr>
+            <td onclick="bekes('jaszkeszeg');"  >Jász-keszeg</td>
+          </tr>
+          <tr>
+            <td onclick="bekes('garda');" >Garda</td>
+          </tr>
+          <tr>
+            <td onclick="bekes('karasz');" >Kárász</td>
+          </tr>
+          <tr>
+            <td onclick="bekes('kecsege');" >Kecsege</td>
+          </tr>
+          <tr>
+            <td onclick="bekes('marna');" >Márna</td>
+          </tr>
+		  <tr>
+            <td onclick="bekes('paduc');" >Paduc</td>
+          </tr>
+         </tbody>
+      </table>
+	 
+    </div>    
+    <div class="col-lg-6">      
+      <div id="bekesszovegkeret">
+        <p>A mederfenéken, vagy vízinövényeken található apró férgekből, csigákból, s más apró szervezetekből, vagy pedig a szabad víz lebegő apró szervezeteiből, a „plankton”-ból élnek. Őket a növényevőkkel együtt „békés halaknak” nevezzük.</p>
+        <p >A békés halak növényevők (amur, fehér busa), mindenevők (ponty, keszegfélék), vagy apróállat evők (garda, tokfélék) </p>
+        <p> A békés halak szájnyílása felső, alsó vagy végállású és viszonylag kicsi. A  békés  halaknál  fogak  nincsenek, de a pontyfélék garatüregében egy sajátos csontpár található s ezen a fajra jellemző alakú garatfogak  ülnek,  egy,  kettő  vagy  három  sorban. Feladatuk a táplálék durva aprítása és továbbítása.
+		A halak előbél szakasza (száj, garat, nyelőcső) rövid.  Békés halaknál gyomor nincs, a nyelőcsőután a közép- majd az utóbél következik.		</p>
+		<p>Az  utóbbi  években  fokozatosan  kialakultak  a  melegvízi  békés  halak  (ponty,  növényevő  halak,  compó)  nagyüzemi  szaporításának  és  ivadéknevelésének  tudományos  és  műszaki feltételei.  Megszülettek  az  elméletileg  megalapozott  technológiák  és  megépültek  a  keltetőházak, ivadéknevelő tóegységek. Ennek következtében fokozatosan megoldódik a haltenyésztők évszázados gondja: a biztonságos népesítőanyag évenkénti előállítása. A szakosított halszaporító telepeken, ahol jó szervezéssel és a kapacitás kihasználásávál a békés halfajok ivadékaiból többnyire fölösleg is előállítható (pl. késői szaporítással, az ivadéknevelő tavak népesítésének fokozásával stb.). Ez az olcsó ponty- vagy növényevő ivadék a nemes ragadozó halak fontos táplálékbázisa lehet.</p>
+      </div>
+      <div id="bekeskepkeret">
+        <img id="bekeskep">
+      </div>
+     </div> 
+	</div>
+<div class="row">    
+    <div class="col-lg-9">
+      
+	  <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Méretkorlátozás alá nem eső békés halfajok</th>
+          </tr>
+        </thead>
+        <tbody class="kozep keplink">
+          <tr>
+            <td onclick="nbekes('amur');" >Amur</td>
+          </tr>
+          <tr>
+            <td onclick="nbekes('bagolykeszeg');"  >Bagoly-keszeg</td>
+          </tr>
+          <tr>
+            <td onclick="nbekes('bodorka');" >Bodorka</td>
+          </tr>
+          <tr>
+            <td onclick="nbekes('deverkeszeg');" >Dévérkeszeg</td>
+          </tr>
+          <tr>
+            <td onclick="nbekes('feherbusa');" >Fehér busa</td>
+          </tr>
+          <tr>
+            <td onclick="nbekes('naphal');" >Naphal</td>
+          </tr>
+		  <tr>
+            <td onclick="nbekes('szelhajtokusz');" >Szélhajtó küsz</td>
+          </tr>
+          <tr>
+            <td onclick="nbekes('vagodurbincs');" >Vágódurbincs</td>
+          </tr>
+          <tr>
+            <td onclick="bekes('ponty')" >Ponty</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>    
+    <div class="col-lg-6">      
+      <div id="nbekesszovegkeret">
+        <img src="kepek/kanalastok.jpg" />
+      </div>
+      <div id="nbekeskepkeret">
+        <img id="nbekeskep">
+      </div>
+    </div>    	
+  </div>
+  
+  
+  <div class="row">
+    <h2 class="display-5" id="ragadozo">Ragadozó halak</h2> 
+	<p>Horgászati értelemben ragadozónak nevezzük az önmagához hasonló nagyságú vagy jellegű zsákmányt fogyasztó állatfajokat. Így tehát ragadozónak tekintjük a gerinces állatokat és halakat zsákmányoló fajtákat.</p>
+	<p>A ragadozók szájnyílása nagy, mélyen hasított, szájüregükben gyökér nélküli, ún.  ránőtt fogak  találhatók.  Sok  fajnál  az  ajkak  környékén  bajusz-szálak,  speciális  ízlelő  és  tapintószervek  segítik  a  táplálék  megkeresését  és  felvételét. </p>
+    <p>A ragadozók számára ma még a legreálisabb és legolcsóbb táplálékforrás a pontyos tavakba kerülő, az intenzív hasznosítású holtágakban és tározókban termelődő értéktelen fehér halak és  békalárvák  tömege.  Az  igényes  haltenyésztő  igyekszik  mindezeket  a  forrásokat  értékes  halhússá alakítani. Erre a célra a legalkalmasabb a harcsa. A fokozódó harcsaivadék igények már  nem  elégíthetők  ki  kisüzemi  munkaigényes,  inkább  csak  önellátásra  alkalmas,  de  nagy  termelés  esetén  már  nehézkes  természetszerű  szaporítási  módszerekkel.  Szükségessé  vált  a  harcsa szaporításában is azoknak az ismereteknek az alkalmazása, amelyek  a békés halfajok tömegméretű szaporítására születtek.</p>
+    <div class="col-lg-6 py-3 ">
+      <img src="kepek/csuka.jpg" alt="Csuka" title="Csuka">
+      Csuka
+    </div>
+    <div class="col-lg-6 py-3 ragadozokep">
+      <img src="kepek/harcsa.jpg" alt="Harcsa" title="Harcsa">
+      Harcsa
+    </div>   
+  </div>
+
+
+  <h2 class="display-5" id="vedett">Védett halak</h2>
+  <p>A védett halfaj kifejezés az adott területen, országban, vagy akár egész kontinensen természetvédelmi oltalom alatt álló faj meghatározása szerint értendő. A védelmet általában a fajnak, vagy adott területen élő populációjának a veszélyeztetettsége indokolja.</p>
+  <div class="row">
+
+    <div class="col-lg-6 py-3">
+      <div class="media border p-3 h-100">
+        <img src="kepek/tiszaiingola.jpg" alt="Tiszai ingola" title="Tiszai ingola" class="mr-3 mt-3 vedettkep">
+        <div class="media-body">
+          <h4>Tiszai ingola <small><i>(Eudontomyzon danfordi)</i></small></h4>
+          <p>Lárvaállapotban szerves törmeléket, detrituszt fogyaszt, míg a kifejlett példányok paraziták. A kifejlett állat szívótölcsérré alakult szájával halakra rögzíti magát, fogazott nyelvével sebet ejt rajtuk, majd a felkapart húst, testnedveket és vért felszívja. Étrendjében szerepel még a vízbe került emlősök és madarak tetemei is, ezért hozzájárul a víz tisztításához és így valamelyest kompenzál a kimart sebek miatti halpusztulásokért.<6p>
+<p>A tiszai ingola helyhez kötött (nem vándorló) édesvízi a víz tisztaságára rendkívül érzékeny halfaj, elsősorban a márnás és pisztrángos hegyi patakokban él. Az ingolalárvák a folyók pangó vizű részein 4-5 évig az iszapba ásva, férgek módjára élnek. A lárvákból metamorfózis útján augusztus–szeptemberben fejlődnek ki. Életciklusa egy hosszabb lárva és egy rövidebb imaginális életszakaszból áll. Várható élettartama 71-88 hónap közé tehető.</p>
+         </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6 py-3">
+     <div class="media border p-3 h-100">
+       <img src="kepek/leanykoncer.jpg" alt="Leánykoncér" title="Leánykoncér" class="mr-3 mt-3 vedettkep">
+       <div class="media-body">
+         <h4>Leánykoncér <small><i>(Rutilus virgo)</i></small></h4>
+         <p>A mederfenéken keresi táplálékát, mely apró fenéklakók, mint talajférgek, apró rákok, rovarlárvák főként szúnyoglárvák és puhatestűek.</p>
+
+<p>A leánykoncér főként nagyobb mélységekben, a fenék közelében tartózkodik, csak az április–májusi ívási időben jelenik meg a holtágak sekélyebb parti vizeiben. Ilyenkor mindkét ivar különösen színesen csillogó a rózsatövishez hasonló nászruhát ölt a hímek fején és a testoldalakon szembetűnő nászkiütések jelennek meg.<br>
+
+Ivarérettségét 3-4 évesen éri el. Ragadós ikrái (a nőstény nagyságától függően 40 000-60 000 darab és átmérője körülbelül 2 milliméter) vízinövényeken, gyökereken, köveken tapadnak meg.</p>
+        </div>
+     </div>
+   </div>
+
+   <div class="col-lg-6 py-3">
+    <div class="media border p-3 h-100">
+      <img src="kepek/tarkageb.jpg" alt="Tarka géb" title="Tarka géb" class="mr-3 mt-3 vedettkep">
+      <div class="media-body">
+        <h4>Tarka géb  <small><i>(Proterorhinus semilunaris)</i></small></h4>
+        <p>Teste és feje oldalra lapított. Rajta 37-46 nagy, kerek pikkelye van. A felső- és alsó állkapcsok egyforma hosszúak. A hasán tapadókorong található. Úszóhólyaga nincs. Az úszók töve pikkelyezett. Színezete sárgásszürke 4-5 sötét sávval. Úszói csíkosak. A tarka géb legfeljebb 9 centiméter hosszú. A Proterorhinus semilunaris fejének a hossza a testhossz 28-32 százalékát teszi ki. Az első hátúszó érintkezik a második hátúszóval. Szemének átmérője a fej 16-21 százalékát képezi. </p>
+       </div>
+    </div>
+  </div>
+  
+  <div class="col-lg-6 py-3">
+    <div class="media border p-3 h-100">
+      <img src="kepek/vagotok.jpg" alt="Vágótok" title="Vágótok" class="mr-3 mt-3 vedettkep">
+      <div class="media-body">
+        <h4>Vágótok <small><i>(Acipenser gueldenstaedti)</i></small></h4>
+        <p>Testhossza 130-250 centiméter, de elérheti a 400 centimétert és a 80 kilogrammot is. Alsó állású szája közepes méretű, lapát alakú és kerekded átmérőjű. Rojtok nélküli bajuszszálai visszahajtva nem érnek a száj pereméig. Alsó ajka középen többnyire osztott. 10-13 hátvértje éles, hátrafelé irányuló hegyekkel (az idősebb példányoknál eltompultak); a 21-50 kis oldalvért olyan távol helyezkedik el egymástól, hogy a köztes részeken láthatóvá válik az oldalvonal; 8-10 hasvértje van. Erőteljes, orsó alakú teste magasabb, mint a többi Acipenser fajé, orra széles és rövid. Hátúszója a farokrészen foglal helyet. Hátoldala kékesszürke, hamuszürke vagy olajszürke, oldalai világosabbak; hasoldala a fehérestől a piszkos sárgáig változik. A csontos vértek elefántcsontszínűek</p>
+		<p>A vágótok vándorhal, ívni a folyókba úszik fel. Egy részük már a folyótorkolat homok- vagy kavicspadjain lerakja ikráit, mások messzire felhatolnak a folyókban. Február és május között rakja, 70-800 ezer ikráját. Ismeretesek állandó (nem vándorló) formák is (például a Volgából és a Dunából).</p>
+       </div>
+    </div>
+  </div>
+  
+  <div class="col-lg-6 py-3">
+    <div class="media border p-3 h-100">
+      <img src="kepek/lapipoc.jpg" alt="Lápi póc" title="Lápi póc" class="mr-3 mt-3 vedettkep">
+      <div class="media-body">
+        <h4>Lápi póc  <small><i>(Umbra krameri)</i></small></h4>
+        <p>Kistermetű hal, teste kismértékben nyújtott, enyhén zömök, oldalról lapított. Általában 5 centiméter hosszú, de akár 17 centiméteresre is megnőhet. Feje közepes méretű, orra rövid, az orr hossza nagyjából megegyezik a szem átmérőjével. Szája félig felső állású, a szájhasíték enyhén felfelé irányul, a felső állkapocs vége a szem alá ér.<br>
+Hátúszója a test hátsó részén helyezkedik el, alatta található a has és az alsó úszó, a farokúszója a hazai fajok többségétől eltérően szabályosan lekerekített. A hátúszót 3-4 kemény és 12-13 lágy sugár alkotja, a sugarak hossza hátrafelé haladva nem csökken. A kemény és lágy sugarak száma a mellúszóban 1 és 1-2, a hasúszóban 1 és 5, az alsó úszóban 2 és 5-6. A farokúszót 16 lágy sugár alkotja.<br>
+
+Kerek simaszélű rugalmas pikkelyei nagyok, melyek a fejtetőre, az arctájékra és a kopoltyúfedőre is kiterjednek. Oldalvonala nincs, de helyén világosabb, aranyszínű sáv húzódik, mely mentén a pikkelyek száma 30-35. Testének alapszíne vörösesbarna, a fejen és a testen szabálytalanul elszórt fekete foltokkal. Alsó állkapcsa és úszói világosabbak, a hátúszó és a farokúszó tövén sötét foltsor húzódik. A kopoltyútüskék száma 9.</p>
+       </div>
+    </div>
+  </div>
+  
+  <div class="col-lg-6 py-3">
+    <div class="media border p-3 h-100">
+      <img src="kepek/viza.jpg" alt="Viza" title="Viza" class="mr-3 mt-3 vedettkep" id="">
+      <div class="media-body">
+        <h4>Viza  <small><i>(Huso huso)</i></small></h4>
+        <p>Rendkívül lassan, de óriásira növő anadrom faj. A legnagyobb, rekord méretű példány 7,2 méter hosszú és 1571 kilogramm tömegű volt. A vizák (Huso nemzetség) a világ legnagyobb édesvízi halai. A csontos halak főosztályába tartoznak, de a vázuk porcos, ezért egyfajta porcos ganoidnak tekinthető.
+
+Teste többé-kevésbé csupasz, rajta 5 sorban elhelyezkedő csontvértek és elszórva csontszemcsék vagy más néven vértpikkelyek (ganoid pikkelyek) fedik. A fején csontos pajzsok találhatók. Négy bajuszszála az alsóállású száj előtt helyezkedik el. Állkapcsa előretolható. Orra tompa, bajuszszálai hengeresek és rojtosak. Szája nagy, alulról eléri a fej két szélét. Alsó ajka középen megszakított, ellentétben a sima tokkal.</p>
+       </div>
+    </div>
+  </div>  
+  </div>
+</body>
+</html>
+
